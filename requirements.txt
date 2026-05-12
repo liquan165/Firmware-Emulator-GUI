@@ -1,0 +1,5 @@
+PySide6>=6.6
+PySide6-WebEngine>=6.6
+requests>=2.31
+psutil>=5.9
+websockify>=0.11
