@@ -15,16 +15,29 @@ It provides a QEMU launcher, embedded noVNC display, NAT port forwarding, and an
   - x86_64, i386, aarch64, arm, mips/mipsel/mips64/mips64el, riscv64, ppc/ppc64 (depending on your installed QEMU)
   - Built-in **MIPS Malta compatibility** defaults:
     - disk attachment uses `-hda` (IDE) rather than virtio
+  <img width="642" height="396" alt="image" src="https://github.com/user-attachments/assets/abcee3f9-2d6e-47a8-85ff-a11d541ba8e3" />
+<img width="275" height="352" alt="image" src="https://github.com/user-attachments/assets/e2ac82d3-2abe-412d-8801-f6e2484303fe" />
+
 - **Embedded VM display**
   - QEMU uses VNC output
   - GUI embeds **noVNC** via **websockify**
+    <img width="394" height="37" alt="image" src="https://github.com/user-attachments/assets/87b2deb5-857a-477a-ac58-58403fd9b1c6" />
+<img width="877" height="718" alt="image" src="https://github.com/user-attachments/assets/6cd61226-0a07-4034-ad1c-dbd9e42aee1c" />
+
 - **Network**
   - Default: `-netdev user` (NAT) + configurable port forwarding (e.g., host 2222 -> guest 22)
   - Bridge/TAP mode is exposed (advanced; requires TAP setup on Windows)
+ 
+  <img width="655" height="255" alt="image" src="https://github.com/user-attachments/assets/d6bdcb3f-23ee-4c59-b000-ad2f98bf5ab9" />
+
 - **SSH-key workflow**
   - **SSH Key Wizard (first-run)**:
     - Generates a Windows OpenSSH RSA key (`id_rsa`) if missing
     - Injects the public key into the guest’s `authorized_keys`
+    - 自动链接目标机器并打包固件为tar
+    - 上传到opt目录下并自动mount dev proc等
+      <img width="651" height="279" alt="image" src="https://github.com/user-attachments/assets/d96425ea-7ca8-4154-b0bc-04be0c606f9b" />
+      
   - **Upload rootfs folder**:
     - Packs folder to tar
     - Uploads via Windows `scp.exe`
