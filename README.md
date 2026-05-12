@@ -3,6 +3,7 @@
 
 ##A Windows-friendly Python GUI for firmware/rootfs analysis workflows.  
 It provides a QEMU launcher, embedded noVNC display, NAT port forwarding, and an SSH-key based upload + chroot workflow for extracted rootfs directories.
+支持多架构的友好虚拟机，并且可一键上传目录，一键mount固件进程、设备等达到物联网、车联网固件仿真效果。
 
 > Focus: filesystem-level analysis (extract/upload/mount/chroot), not full device emulation.
 
