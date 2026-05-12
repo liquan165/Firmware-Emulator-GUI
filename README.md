@@ -55,6 +55,7 @@ It provides a QEMU launcher, embedded noVNC display, NAT port forwarding, and an
 > The GUI intentionally uses **Windows System32 OpenSSH** to avoid Cygwin/MSYS path/key permission issues.
 
 ---
+<img width="1499" height="1013" alt="image" src="https://github.com/user-attachments/assets/4d766786-629d-490b-90fb-7e8832a2008c" />
 
 ## Installation
 
