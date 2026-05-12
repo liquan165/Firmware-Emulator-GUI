@@ -1,6 +1,7 @@
 # Firmware Emulator GUI (Windows)
 自用版本的IOT、车联网固件仿真工具
-#A Windows-friendly Python GUI for firmware/rootfs analysis workflows.  
+
+##A Windows-friendly Python GUI for firmware/rootfs analysis workflows.  
 It provides a QEMU launcher, embedded noVNC display, NAT port forwarding, and an SSH-key based upload + chroot workflow for extracted rootfs directories.
 
 > Focus: filesystem-level analysis (extract/upload/mount/chroot), not full device emulation.
